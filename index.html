@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prong - Raytrace like it is 2004</title>
+    <style>
+      html {
+        background: linear-gradient(rgb(192, 192, 192), rgb(128, 128, 128));
+        height: 100vh;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Sans-Serif;
+      }
+
+      canvas {
+        width: 400px;
+        border: 1px solid white;
+      }
+      span {
+        font-size: 24px;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prong</h1>
+    <div>Press space to start</div>
+    <canvas id="screen" width="200" height="200"></canvas>
+    <span id="score"></span>
+    <span id="fps"></span>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
